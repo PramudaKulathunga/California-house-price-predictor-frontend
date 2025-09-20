@@ -14,7 +14,7 @@ A machine learning web application that predicts housing prices in California di
 - **Backend**: Python, Flask, scikit-learn
 - **Frontend**: React.js
 - **Machine Learning**: Random Forest, Feature Engineering
-- **Deployment**: Heroku (backend), Netlify (frontend)
+- **Deployment**: Heroku (backend), Versal (frontend)
 
 ## Setup Instructions
 
