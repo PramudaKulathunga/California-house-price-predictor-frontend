@@ -21,7 +21,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    
+    "deploy": "npm run build && vercel --prod",
+    "deploy:dev": "vercel",
+    "deploy:with-env": "vercel --env REACT_APP_API_URL=$REACT_APP_API_URL --env REACT_APP_ENVIRONMENT=production",
+    
+    "verify:build": "npm run build && npx serve -s build -p 3001",
+    "verify:env": "node -e \"console.log('API URL:', process.env.REACT_APP_API_URL || 'Not set'); console.log('Node env:', process.env.NODE_ENV)\"",
+    "setup:vercel": "npm install -g vercel",
+    "setup:env": "cp .env.example .env.local",
+
+    "logs": "vercel logs",
+    "open": "vercel open"
   },
   "eslintConfig": {
     "extends": [
