@@ -18,8 +18,5 @@ A machine learning web application that predicts housing prices in California di
 
 ## Setup Instructions
 
-### Backend Setup
-```bash
-cd backend
-pip install -r requirements.txt
-python app.py
+### Deployed webpage link
+https://californiahouseprize.vercel.app/
